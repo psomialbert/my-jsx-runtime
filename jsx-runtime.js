@@ -1,6 +1,6 @@
 var uuidv4 = require('uuid').v4;
 
-function jsx(type, config) {
+export function jsx(type, config) {
   if (typeof type === 'function') {
     return type(config);
   }
@@ -26,7 +26,7 @@ function createTextElement(text) {
   };
 }
 
-function render(element, container, placeholder) {
+export function render(element, container, placeholder) {
   const dom =
     element.type === 'TEXT_ELEMENT'
       ? container.ownerDocument.createTextNode('')
@@ -51,5 +51,4 @@ function render(element, container, placeholder) {
     container.appendChild(dom);
   }
 }
-
-module.exports = { jsxs: jsx, jsx: jsx, render };
+export { jsx as jsxs };
