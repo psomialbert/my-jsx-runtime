@@ -4,7 +4,7 @@
   "description": "test",
   "main": "index.js",
   "exports": {
-    "./jsx-runtime/": "./index.js"
+    "./jsx-runtime": "./index.js"
   },
   "repository": "git://github.com/psomialbert/my-jsx-runtime.git",
   "author": "Albert Schapiro",
