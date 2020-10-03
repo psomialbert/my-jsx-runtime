@@ -2,19 +2,11 @@
   "name": "my-jsx-runtime",
   "version": "1.0.1",
   "description": "test",
-  "main": "jsx-runtime",
-  "module": "jsx-runtime.js",
+  "main": "jsx-runtime.js",
   "type": "module",
   "exports": {
-    "./jsx-runtime": {
-      "import": "./jsx-runtime.js",
-      "require": "./jsx-runtime"
-    }
+    "./jsx-runtime": "./jsx-runtime.js"
   },
-  "files": [
-    "jsx-runtime",
-    "jsx-runtime.js"
-  ],
   "repository": "git://github.com/psomialbert/my-jsx-runtime.git",
   "author": "Albert Schapiro",
   "license": "MIT",
